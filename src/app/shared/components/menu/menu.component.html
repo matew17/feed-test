@@ -1,0 +1,10 @@
+<nav class="app-menu">
+    <h1>{{title}}</h1>
+    <ul class="menu-items">
+        <li *ngFor="let menu of menus">
+            <a class="link menu-item" [routerLink]="[menu.url]">
+                {{menu.name}}
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,34 @@
+{
+    "title": "Rule of Thumb.",
+    "menus": [
+        {
+            "name": "Past Trials",
+            "url": "/past"
+        },
+        {
+            "name": "How It Works",
+            "url": "/how"
+        },
+        {
+            "name": "Log In / Sign Up",
+            "url": "/login"
+        }
+    ],
+    "header": {
+        "image": {
+            "src": "src/assets/img/pope.jpg",
+            "alt": "The Pope Image."
+        },
+        "poll": {
+            "title": "What's your opinion on",
+            "subtitle": "Pope Francis",
+            "description:": "He's talking on clergy sexual abuse, but is he just another papal pervert protector?",
+            "link": "link",
+            "question": "What's your Veredict?",
+            "closing": {
+                "text": "closing in",
+                "days": "22 Days"
+            }
+        }
+    }
+}

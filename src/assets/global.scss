@@ -20,6 +20,15 @@ body {
         width: 100%;
     }
 
+    .link {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     .btn-link {
         cursor: pointer;
         background: transparent;

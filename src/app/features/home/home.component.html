@@ -1,3 +1,19 @@
-<p>
-  home works!
-</p>
+<ng-container *ngIf="isLoading; then loading; else loaded"></ng-container>
+
+<ng-template #loading>
+    <span>loading . . . </span>
+</ng-template>
+
+<ng-template #loaded>
+    <section class="app-home">
+        <div class="shadow"></div>
+        <img [src]="pageData?.header?.image?.src" alt="pageData?.header?.image?.alt">
+        <section class="header-container">
+            <app-menu [menus]="pageData.menus" [title]="pageData.title"></app-menu>
+        </section>
+
+        <pre>
+            {{ pageData | json }}
+        </pre>
+    </section>
+</ng-template>

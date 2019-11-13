@@ -1,0 +1,17 @@
+@import "base.scss";
+
+.app-menu,
+.menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: $white;
+
+    .menu-items {
+        list-style: none;
+    }
+
+    .menu-item {
+        padding: 0 8px;
+    }
+}

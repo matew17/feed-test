@@ -1,0 +1,20 @@
+@import "base.scss";
+
+.app-home {
+    position: relative;
+
+    .header-container {
+        min-height: 10%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+
+    .shadow {
+        background: $darkgray;
+        min-height: 50px;
+        width: 100%;
+        position: absolute;
+        opacity: 0.8;
+    }
+}
