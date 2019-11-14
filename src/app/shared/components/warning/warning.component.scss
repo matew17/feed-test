@@ -1,0 +1,37 @@
+@import "base.scss";
+
+.app-warning {
+    display: flex;
+    background: $warningBackground;
+    padding: 16px;
+    align-items: center;
+
+    .left-section {
+        flex: 0.2;
+        @include font(18, 24);
+
+        p {
+            margin: 4px 0;
+
+            &:nth-child(2) {
+                @include font(32, 22, 800);
+            }
+        }
+    }
+
+    .right-section {
+        flex: 0.75;
+        padding: 0 16px;
+    }
+
+    .close-cta {
+        @include font(24, 0);
+        justify-self: flex-end;
+        flex: 0.05;
+        text-align: right;
+
+        i {
+            cursor: pointer;
+        }
+    }
+}

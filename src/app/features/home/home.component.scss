@@ -1,7 +1,10 @@
 @import "base.scss";
 
 .app-home {
-    position: relative;
+    .main-container {
+        position: relative;
+        height: 95%;
+    }
 
     .header-container {
         min-height: 10%;
@@ -11,10 +14,34 @@
     }
 
     .shadow {
-        background: $darkgray;
+        background: $grayTransparent;
         min-height: 50px;
         width: 100%;
         position: absolute;
-        opacity: 0.8;
+    }
+
+    img {
+        height: 100%;
+    }
+
+    .pope-pull {
+        position: absolute;
+        left: 150px;
+        top: 150px;
+    }
+
+    .remaining-time {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .content-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .warning-container {
+        margin: 24px 0;
     }
 }

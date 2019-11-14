@@ -22,13 +22,23 @@
         "poll": {
             "title": "What's your opinion on",
             "subtitle": "Pope Francis",
-            "description:": "He's talking on clergy sexual abuse, but is he just another papal pervert protector?",
-            "link": "link",
+            "description": "He's talking on clergy sexual abuse, but is he just another papal pervert protector?",
             "question": "What's your Veredict?",
+            "link": {
+                "url": "google.com",
+                "text": "More Information"
+            },
             "closing": {
                 "text": "closing in",
-                "days": "22 Days"
+                "days": 22
             }
+        }
+    },
+    "content": {
+        "warning": {
+            "title": "Speak Out. Be heard.",
+            "subtitle": "Be counted",
+            "description": "Rule of thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It's easy: You share your opinion, we analyze and put the data in a public report."
         }
     }
 }

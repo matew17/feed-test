@@ -1,0 +1,13 @@
+<div class="app-remain-time">
+
+    <div class="remaining" [ngStyle]="{flex: days / 100}">
+        <span class="text">
+            {{text}}
+        </span>
+    </div>
+    <div class="days" [ngStyle]="{flex: (100 - days) / 100}">
+        <span class="text">
+            {{days}} days
+        </span>
+    </div>
+</div>

@@ -6,14 +6,30 @@
 
 <ng-template #loaded>
     <section class="app-home">
-        <div class="shadow"></div>
-        <img [src]="pageData?.header?.image?.src" alt="pageData?.header?.image?.alt">
-        <section class="header-container">
-            <app-menu [menus]="pageData.menus" [title]="pageData.title"></app-menu>
-        </section>
 
-        <pre>
-            {{ pageData | json }}
-        </pre>
+        <div class="main-container">
+            <div class="shadow"></div>
+            <img [src]="pageData?.header?.image?.src" alt="pageData?.header?.image?.alt">
+            <section class="header-container">
+                <app-menu [menus]="pageData.menus" [title]="pageData?.title"></app-menu>
+                <app-info-pull class="pope-pull" [data]="pageData?.header?.poll"></app-info-pull>
+            </section>
+            <section class="remaining-time">
+                <app-remain-time-pull [days]="pageData?.header?.poll?.closing?.days"
+                    [text]="pageData?.header?.poll?.closing?.text">
+                </app-remain-time-pull>
+            </section>
+        </div>
+
+        <div class="content-container">
+            <div class="warning-container">
+                <app-warning [data]="pageData?.content?.warning"></app-warning>
+            </div>
+
+            <pre>
+                {{ pageData | json }}
+            </pre>
+        </div>
+
     </section>
 </ng-template>

@@ -1,0 +1,14 @@
+<div class="app-warning" *ngIf="shown">
+    <div class="left-section">
+        <p>{{data.title}}</p>
+        <p>{{data.subtitle}}</p>
+    </div>
+
+    <div class="right-section">
+        <p>{{data.description}}</p>
+    </div>
+
+    <div class="close-cta">
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>

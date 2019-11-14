@@ -1,0 +1,47 @@
+@import "base.scss";
+
+.app-remain-time {
+    color: $white;
+    display: flex;
+    background: transparent;
+    height: 40px;
+    align-items: center;
+
+    .remaining {
+        background: $grayTransparent;
+        text-align: right;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+
+        .text {
+            margin-right: 8px;
+            @include font(16, 40);
+        }
+
+        &::after {
+            content: " ";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: auto;
+            right: -15px;
+            top: 12px;
+            bottom: auto;
+            border: 8px solid;
+            border-color: gray transparent transparent transparent;
+            transform: rotate(275deg);
+        }
+    }
+
+    .days {
+        background: $whiteTransparent;
+        color: $gray;
+        height: 100%;
+
+        .text {
+            margin-left: 16px;
+            @include font(36, 40, 700);
+        }
+    }
+}

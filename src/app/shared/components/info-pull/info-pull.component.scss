@@ -1,0 +1,51 @@
+@import "base.scss";
+
+.app-info-pull {
+    width: 450px;
+    height: 400px;
+    background: $grayTransparent;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+
+    .poll {
+        flex-grow: 1;
+        padding: 24px;
+    }
+
+    .title {
+        @include font(14, 0);
+    }
+
+    .subtitle {
+        @include font(36, 0, 700);
+    }
+
+    .description {
+        @include font(16, 24);
+    }
+
+    .question {
+        margin-top: 46px;
+    }
+
+    .vote {
+        flex-grow: 1;
+        display: flex;
+        min-height: 70px;
+
+        .action {
+            flex: 0.5;
+            background: $orangeTransparent;
+
+            &:first-child {
+                background: $mindGreenTransparent;
+            }
+        }
+
+        .action-icon {
+            color: $white;
+            font-size: 30px;
+        }
+    }
+}

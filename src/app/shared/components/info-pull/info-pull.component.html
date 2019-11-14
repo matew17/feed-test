@@ -1,0 +1,21 @@
+<div class="app-info-pull">
+    <div class="poll">
+        <p class="title">{{data.title}}</p>
+        <p class="subtitle">{{data.subtitle}}</p>
+        <p class="description">{{data.description}}</p>
+        <i class="fa fa-bank"></i>
+        <a [href]="data.link?.url">
+            {{data.link?.text}}
+        </a>
+        <p class="question">{{data.question}}</p>
+
+    </div>
+    <div class="vote">
+        <button class="action">
+            <i class="fa fa-thumbs-up action-icon"></i>
+        </button>
+        <button class="action">
+            <i class="fa fa-thumbs-down action-icon"></i>
+        </button>
+    </div>
+</div>
