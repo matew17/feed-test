@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class InfoPullComponent implements OnInit {
 
-    @Input() data: {};
+    @Input() data;
 
     constructor() { }
 
