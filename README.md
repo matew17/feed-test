@@ -36,3 +36,9 @@ Some key values that I added are the following:
 - The Navigation from one page to another is redirecting to the same component, however it could be easily changed to redirect to modules and use adventage of lazy loading.
 - Images are comming from a CDN called Cloudinary and those have a configuration to use Auto format, which allows to download the images in different formats depending on the network you're using and also gives you a better performance.
 - I added only one mock of data per page (Only One), but it could easily be changed if desired.
+
+## Evidence
+![Desktop presentatio](https://github.com/matew17/feed-test/blob/master/evidence/desktop.gif)
+
+
+![Desktop presentatio](https://github.com/matew17/feed-test/blob/master/evidence/mobile.gif)
