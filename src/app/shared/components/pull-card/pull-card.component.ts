@@ -45,9 +45,9 @@ export class PullCardComponent implements OnInit {
 
     voteNowLocalChanges() {
         if (this.myVote === 'up') {
-            this.allVotes.up += 1;
+            this.allVotes['up'] += 1;
         } else if (this.myVote === 'down') {
-            this.allVotes.down += 1;
+            this.allVotes['down'] += 1;
         }
 
         delete this.myVote;
