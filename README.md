@@ -38,7 +38,7 @@ Some key values that I added are the following:
 - I added only one mock of data per page (Only One), but it could easily be changed if desired.
 
 ## Evidence
-![Desktop presentatio](https://github.com/matew17/feed-test/blob/master/evidence/desktop.gif)
+![Desktop presentation](https://github.com/matew17/feed-test/blob/master/evidence/desktop.gif)
 
 
-![Desktop presentatio](https://github.com/matew17/feed-test/blob/master/evidence/mobile.gif)
+![Mobile presentation](https://github.com/matew17/feed-test/blob/master/evidence/mobile.gif)
