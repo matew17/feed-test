@@ -34,4 +34,18 @@
             cursor: pointer;
         }
     }
+
+    @include mobile-tablet {
+        flex-flow: column;
+
+        .left-section {
+            width: 100%;
+            padding: 0 16px;
+        }
+
+        .close-cta {
+            position: absolute;
+            right: 8px;
+        }
+    }
 }

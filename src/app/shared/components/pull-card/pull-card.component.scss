@@ -38,15 +38,17 @@
         flex-direction: column;
         color: $white;
         margin-left: 8px;
-
-        .name {
-            @include font(36, 36);
-            margin: 0;
-        }
     }
+
+    .name {
+        @include font(36, 36);
+        margin: 0;
+    }
+
     .summary {
         padding-right: 4px;
     }
+
     .loading {
         background: $blackTransparent;
         height: 30px;
@@ -114,6 +116,21 @@
         .icon-bar,
         span {
             @include font(30);
+        }
+    }
+
+    @include bg-mobile {
+        .pulls-container {
+            margin-top: 40%;
+        }
+    }
+
+    @include mobile-tablet {
+        .average-bar {
+            .icon-bar,
+            span {
+                @include font(16);
+            }
         }
     }
 }

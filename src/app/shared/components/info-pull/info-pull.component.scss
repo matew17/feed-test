@@ -48,4 +48,28 @@
             font-size: 30px;
         }
     }
+
+    @include mobile-tablet {
+        @include square(250px);
+
+        .title {
+            @include font(12, 0);
+        }
+
+        .subtitle {
+            @include font(16, 0, 700);
+        }
+
+        .description {
+            @include font(10, 24);
+        }
+
+        .vote {
+            min-height: 50px;
+        }
+
+        .poll {
+            padding: 28px;
+        }
+    }
 }

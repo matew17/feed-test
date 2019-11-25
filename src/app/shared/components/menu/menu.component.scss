@@ -14,4 +14,14 @@
     .menu-item {
         padding: 0 8px;
     }
+
+    @include mobile-tablet {
+        background: $orange;
+        flex-flow: column;
+        align-items: flex-end;
+
+        h1 {
+            margin: 8px 0;
+        }
+    }
 }

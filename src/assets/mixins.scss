@@ -8,6 +8,12 @@ $desktop-width: 1024px;
     }
 }
 
+@mixin mobile-tablet {
+    @media (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
 @mixin bg-mobile {
     @media (min-width:#{$bg-mobile}) and (max-width: #{$tablet-width - 1px}) {
         @content;

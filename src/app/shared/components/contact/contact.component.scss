@@ -21,4 +21,13 @@
         padding: 16px;
         background: transparent;
     }
+
+    @include mobile-tablet {
+        @include font(16);
+
+        .cta {
+            @include font(12, 16, 700);
+            padding: 8px;
+        }
+    }
 }
