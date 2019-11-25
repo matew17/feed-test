@@ -16,8 +16,8 @@
     ],
     "header": {
         "image": {
-            "src": "src/assets/img/pope.jpg",
-            "alt": "The Pope Image."
+            "src": "https://res.cloudinary.com/teocastano/image/upload/f_auto/v1574629062/zemoga/pope.jpg",
+            "alt": "The pope"
         },
         "poll": {
             "title": "What's your opinion on",
@@ -39,6 +39,92 @@
             "title": "Speak Out. Be heard.",
             "subtitle": "Be counted",
             "description": "Rule of thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It's easy: You share your opinion, we analyze and put the data in a public report."
+        },
+        "popularity": {
+            "title": "Votes",
+            "cards": [
+                {
+                    "image": {
+                        "src": "https://res.cloudinary.com/teocastano/image/upload/f_auto/v1574628839/zemoga/Kanye.jpg",
+                        "alt": "Kanye Image."
+                    },
+                    "name": "Kanye West",
+                    "duration": "1 Month ago",
+                    "category": "Entertainment",
+                    "description": "Vestibulum diam ante, portitor o odio eget, rhoncus neque. Aenean eu velit libero.",
+                    "thumbs": {
+                        "up": 64,
+                        "down": 36
+                    }
+                },
+                {
+                    "image": {
+                        "src": "https://res.cloudinary.com/teocastano/image/upload/f_auto/v1574640386/zemoga/mark.jpg",
+                        "alt": "Image."
+                    },
+                    "name": "Mark Zuckerberg",
+                    "duration": "1 Month ago",
+                    "category": "Bussiness",
+                    "description": "Vestibulum diam ante, portitor o odio eget, rhoncus neque. Aenean eu velit libero.",
+                    "thumbs": {
+                        "up": 36,
+                        "down": 64
+                    }
+                },
+                {
+                    "image": {
+                        "src": "https://res.cloudinary.com/teocastano/image/upload/c_limit,f_auto,h_682,w_655/v1574640386/zemoga/cristina.jpg",
+                        "alt": "Image."
+                    },
+                    "name": "Cristina Fernández de Kirchner",
+                    "duration": "1 Month ago",
+                    "category": "Politics",
+                    "description": "Vestibulum diam ante, portitor o odio eget, rhoncus neque. Aenean eu velit libero.",
+                    "thumbs": {
+                        "up": 36,
+                        "down": 64
+                    }
+                },
+                {
+                    "image": {
+                        "src": "https://res.cloudinary.com/teocastano/image/upload/f_auto/v1574640386/zemoga/malala.jpg",
+                        "alt": "Image."
+                    },
+                    "name": "Malala Youzafsai",
+                    "duration": "1 Month ago",
+                    "category": "Entertainment",
+                    "description": "Vestibulum diam ante, portitor o odio eget, rhoncus neque. Aenean eu velit libero.",
+                    "thumbs": {
+                        "up": 64,
+                        "down": 36
+                    }
+                }
+            ]
+        },
+        "contact": {
+            "image": {
+                "src": "https://res.cloudinary.com/teocastano/image/upload/f_auto/v1574641771/zemoga/crowd.jpg",
+                "alt": "Crowd"
+            },
+            "text": "Is there anyone else you would want us to add?",
+            "cta": "Submit a name"
         }
+    },
+    "footer": {
+        "text": "Follow Us",
+        "social": [
+            {
+                "id": "fb",
+                "name": "Facebook",
+                "icon": "fa-facebook-official",
+                "url": "https://facebook.com"
+            },
+            {
+                "id": "fb",
+                "name": "Twitter",
+                "icon": "fa-twitter",
+                "url": "https://twitter.com"
+            }
+        ]
     }
 }

@@ -7,6 +7,9 @@ import { InfoPullComponent } from '@shared/components/info-pull/info-pull.compon
 import { MenuComponent } from '@shared/components/menu/menu.component';
 import { RemainTimePullComponent } from '@shared/components/remain-time-pull/remain-time-pull.component';
 import { WarningComponent } from '@shared/components/warning/warning.component';
+import { PullCardComponent } from './components/pull-card/pull-card.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
     imports: [
@@ -15,14 +18,20 @@ import { WarningComponent } from '@shared/components/warning/warning.component';
         RouterModule
     ],
     declarations: [
+        ContactComponent,
+        FooterComponent,
         InfoPullComponent,
         MenuComponent,
+        PullCardComponent,
         RemainTimePullComponent,
         WarningComponent
     ],
     exports: [
+        ContactComponent,
+        FooterComponent,
         InfoPullComponent,
         MenuComponent,
+        PullCardComponent,
         RemainTimePullComponent,
         WarningComponent
     ]

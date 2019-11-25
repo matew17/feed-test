@@ -6,7 +6,6 @@
 
 <ng-template #loaded>
     <section class="app-home">
-
         <div class="main-container">
             <div class="shadow"></div>
             <img [src]="pageData?.header?.image?.src" alt="pageData?.header?.image?.alt">
@@ -26,9 +25,29 @@
                 <app-warning [data]="pageData?.content?.warning"></app-warning>
             </div>
 
-            <pre>
+            <section class="popularity">
+                <h1 class="title">{{pageData?.content?.popularity?.title}}</h1>
+
+                <section class="cards-container">
+                    <ng-template ngFor let-card [ngForOf]="pageData?.content?.popularity?.cards">
+                        <div class="card">
+                            <app-pull-card [data]="card"></app-pull-card>
+                        </div>
+                    </ng-template>
+                </section>
+
+            </section>
+
+            <section class="contact">
+                <app-contact [data]="pageData?.content?.contact"></app-contact>
+            </section>
+            <div class="footer">
+                <app-footer [menus]="pageData?.menus" [data]="pageData?.footer"></app-footer>
+            </div>
+
+            <!-- <pre>
                 {{ pageData | json }}
-            </pre>
+            </pre> -->
         </div>
 
     </section>

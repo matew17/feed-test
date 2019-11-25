@@ -27,7 +27,12 @@ $desktop-width: 1024px;
 }
 
 @mixin font($sizeValue: 12, $lineHeight: 16, $fontWeight: 400) {
-  font-size: $sizeValue + px;
-  line-height: $lineHeight + px;
-  font-weight: $fontWeight;
+    font-size: $sizeValue + px;
+    line-height: $lineHeight + px;
+    font-weight: $fontWeight;
+}
+
+@mixin square($size) {
+    width: $size;
+    height: $size;
 }

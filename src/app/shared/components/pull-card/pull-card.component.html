@@ -1,0 +1,60 @@
+<section class="app-pull-card" [ngStyle]="{'background-image': 'url(' + data?.image?.src + ')'  }">
+
+    <div class="pulls-container">
+        <div class="average" [ngClass]="averageIcon ? 'up' : 'down'">
+            <i class="fa" [ngClass]="averageIcon ? 'fa-thumbs-up up' : 'fa-thumbs-down down'"></i>
+        </div>
+        <div class="description">
+            <p class="name">{{data.name}}</p>
+            <span>
+                {{data.duration}} in {{data.category}}
+            </span>
+            <p class="summary">{{!alreadyVoted ? data.description : 'Thank you for Voting!'}}</p>
+
+            <ng-container *ngIf="isLoading; then loading; else loaded"></ng-container>
+
+            <ng-template #loading>
+                <div class="loading">
+                    <span>loading . . . </span>
+                </div>
+            </ng-template>
+
+            <ng-template #loaded>
+                <div class="actions">
+                    <button *ngIf="!alreadyVoted" class="thumb up" [ngClass]="{'thumb-active': myVote === 'up'}"
+                        (click)="setVote('up')">
+                        <i class="fa fa-thumbs-up"></i>
+                    </button>
+                    <button *ngIf="!alreadyVoted" class="thumb down" [ngClass]="{'thumb-active': myVote === 'down'}"
+                        (click)="setVote('down')">
+                        <i class="fa fa-thumbs-down"></i>
+                    </button>
+
+                    <button *ngIf="!alreadyVoted" class="vote-cta" [disabled]="!myVote" (click)="voteNow()">
+                        Vote Now
+                    </button>
+
+                    <button *ngIf="alreadyVoted" class="vote-cta" (click)="voteAgain()">
+                        Vote Again
+                    </button>
+
+                </div>
+            </ng-template>
+        </div>
+    </div>
+
+    <div class="average-bar">
+        <div class="up-transparent bar" [ngStyle]="{flex: percentageUp / 100}">
+            <i class="fa fa-thumbs-up icon-bar"></i>
+            <span>
+                {{percentageUp}}%
+            </span>
+        </div>
+        <div class="down-transparent bar" [ngStyle]="{flex: (100 - percentageUp) / 100}">
+            <span>
+                {{percentageDown}}%
+            </span>
+            <i class="fa fa-thumbs-down icon-bar"></i>
+        </div>
+    </div>
+</section>

@@ -1,4 +1,4 @@
-import { catchError } from 'rxjs/operators';
+import { catchError, delay } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
@@ -18,6 +18,14 @@ export class HomePageService {
 
                     return of(`[Error]: ${error}`);
                 })
+            );
+    }
+
+    // I would send data to a service which store votes on this function. It would be a put call.
+    voteService(): Observable<any> {
+        return of(true)
+            .pipe(
+                delay(1500)
             );
     }
 }

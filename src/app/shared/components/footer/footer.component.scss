@@ -1,0 +1,35 @@
+@import "base.scss";
+
+.app-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px dotted $darkgray;
+
+    .menus {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .item {
+        @include font(12);
+        margin: 0 16px;
+        color: $gray;
+        cursor: pointer;
+    }
+
+    .icon {
+        @include font(24);
+        cursor: pointer;
+        margin: 0 8px;
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+
+        a {
+            color: $black;
+        }
+    }
+}

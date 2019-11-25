@@ -1,0 +1,24 @@
+@import "base.scss";
+
+.app-contact {
+    @include font(30);
+    display: flex;
+    height: 100%;
+    min-height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $whiteTransparent;
+    background-blend-mode: overlay;
+    background-position: bottom;
+    padding: 16px;
+
+    .cta {
+        @include font(16, 16, 700);
+        border: 2px solid $black;
+        padding: 16px;
+        background: transparent;
+    }
+}

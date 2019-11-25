@@ -1,0 +1,23 @@
+<footer class="app-footer">
+    <section>
+        <ul class="menus">
+            <ng-template ngFor let-menu [ngForOf]="menus">
+                <li class="item" [routerLink]="[menu.url]">
+                    {{menu.name}}
+                </li>
+            </ng-template>
+        </ul>
+
+    </section>
+    <section class="social">
+        <p>{{data?.text}}</p>
+        <ul class="menus">
+            <ng-template ngFor let-social [ngForOf]="data?.social">
+                <a [href]="social.url" target="_blank" [attr.aria-label]="social?.name">
+                    <i class="fa icon" [ngClass]="social.icon"></i>
+                </a>
+            </ng-template>
+        </ul>
+    </section>
+
+</footer>

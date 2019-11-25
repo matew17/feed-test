@@ -1,0 +1,119 @@
+@import "base.scss";
+
+.app-pull-card {
+    min-height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    background-color: $blackTransparent;
+    background-blend-mode: overlay;
+    background-position: bottom;
+    position: relative;
+
+    .average {
+        @include square(40px);
+        @include font(20);
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pulls-container {
+        display: flex;
+        margin-top: 50%;
+    }
+
+    .up {
+        background: $mindGreen;
+    }
+
+    .down {
+        background: $orange;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        margin-left: 8px;
+
+        .name {
+            @include font(36, 36);
+            margin: 0;
+        }
+    }
+    .summary {
+        padding-right: 4px;
+    }
+    .loading {
+        background: $blackTransparent;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+
+        .thumb {
+            @include square(30px);
+            @include font(20);
+            color: $white;
+            margin: 0 8px 0 0;
+        }
+
+        .thumb-active {
+            border: 1px solid $white;
+        }
+
+        .vote-cta {
+            background: transparent;
+            padding: 8px 16px;
+            color: $white;
+            border: 1px solid $white;
+
+            &:disabled {
+                border: 1px solid $darkgray;
+                color: $darkgray;
+            }
+        }
+    }
+
+    .average-bar {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        color: $white;
+        height: 50px;
+
+        .bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .up-transparent {
+            background: $mindGreenTransparent;
+            justify-content: flex-start;
+        }
+
+        .down-transparent {
+            background: $orangeTransparent;
+            justify-content: flex-end;
+        }
+
+        .icon-bar {
+            margin: 0 8px;
+        }
+
+        .icon-bar,
+        span {
+            @include font(30);
+        }
+    }
+}
